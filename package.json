@@ -6,7 +6,10 @@
     "dev": "PORT=3900 next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "add": "git add .",
+    "commit": "git commit -m 'Update package.json with new github scripts'",
+    "push": "npm run add && npm run commit && git push origin master"
   },
   "dependencies": {
     "axios": "^1.5.0",
